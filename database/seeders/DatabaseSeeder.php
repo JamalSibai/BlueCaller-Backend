@@ -96,7 +96,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Mark@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800000",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -104,7 +104,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Mike@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -112,7 +112,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Ali@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -120,7 +120,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Mohammad@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -128,7 +128,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Charbel@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
 
@@ -138,7 +138,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "George@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -146,7 +146,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Fadi@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -154,7 +154,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Karim@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -162,7 +162,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Abass@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -170,7 +170,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Fadel@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -178,7 +178,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "John@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -186,7 +186,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Jad@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -194,7 +194,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Joudi@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
@@ -202,7 +202,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "jamal@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0",
             "firebase_token"=>"ExponentPushToken[5RBES7Ixh6sgwQpqy1quK3]"
             ]);

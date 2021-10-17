@@ -82,7 +82,7 @@ class UserAuthController extends Controller
         $user->phone = $request->phone;
         $user->user_type = $request->user_type;
         $user->firebase_token = $request->firebase_token;
-        $user->image = "http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg";
+        $user->image = "http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg";
         $user->save();
 
         return response()->json([
@@ -118,7 +118,7 @@ class UserAuthController extends Controller
         $user->phone = $request->phone;
         $user->user_type = $request->user_type;
         $user->firebase_token = $request->firebase_token;
-        $user->image = "http://3.15.143.135/storage/F8uqB5hADakkSvbPW5cMRIfPJZdovEwoPtC8rFwB.jpg";
+        $user->image = "http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg";
         $user->save();
 
         $user_id = User::where('email',$request->email)->get('id');
