@@ -714,13 +714,21 @@ class UserAuthController extends Controller
         }
 
         return json_encode($result,JSON_PRETTY_PRINT);
-
-
-
-
     }
 
+    public function GetChat(Request $request){
+        $user_id =auth()->user()->id;
+        $otheruser = $request->otheruser;
 
+        $messages = Message::where('receiver_id',$user_id)
+                            ->orwhere('receiver_id',$otheruser)
+                            ->orwhere('sender_id',$otheruser)
+                            ->orwhere('sender_id',$user_id)
+                            ->get();
+
+        return json_encode($messages,JSON_PRETTY_PRINT);
+
+    }
 
 
 
