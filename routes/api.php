@@ -55,6 +55,7 @@ Route::group([
     Route::post('edit-category', [UserAuthController::class, 'EditCategory']);
     Route::post('edit-appointment-status', [UserAuthController::class, 'EditAppointmentStatus']);
     Route::post('get-chat', [UserAuthController::class, 'GetChat']);
+    Route::post('edit-region', [UserAuthController::class, 'EditRegion']);
 
 });
 

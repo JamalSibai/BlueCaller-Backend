@@ -101,6 +101,7 @@ class UserAuthController extends Controller
             'user_type' => 'required|integer|between:0,1',
             'hourly_price' => 'required|integer|min:1|max:200',
             'category' => 'required',
+            'region' => 'required',
             'firebase_token' => 'required',
         ]);
 
@@ -110,6 +111,8 @@ class UserAuthController extends Controller
                 "errors" => $validator->errors()
             ), 400);
         }
+
+
 
         $user = new User;
         $user->name = $request->name;
@@ -131,6 +134,15 @@ class UserAuthController extends Controller
         $freelancer_standard_info->hourly_price = $request->hourly_price;
         $freelancer_standard_info->category_id = $category_id;
         $freelancer_standard_info->save();
+
+        $region_id = FreelancerRegion::where("region",$request->region)->get('id');
+        $region_id = $region_id[0]->id;
+
+        $region = new FreelancerRegionPivot;
+        $region->region_id = $region_id;
+        $region->user_id = $user_id;
+        $region->save();
+
 
 
         return response()->json([
@@ -727,6 +739,29 @@ class UserAuthController extends Controller
                             ->get();
 
         return json_encode($messages,JSON_PRETTY_PRINT);
+
+    }
+    public function EditRegion(Request $request){
+        $user_id =auth()->user()->id;
+        $region = $request->region;
+        $region_id = FreelancerRegion::where("region",$request->region)->get('id');
+        $region_id = $region_id[0]->id;
+
+
+
+        $region = FreelancerRegionPivot::where("user_id",$user_id)->get('id');
+        $region = $region[0]->id;
+
+
+        $regionedit = FreelancerRegionPivot::find($region);
+        $regionedit->region_id = $region_id;
+        $regionedit->user_id = $user_id;
+        $regionedit->save();
+
+        return json_encode($regionedit,JSON_PRETTY_PRINT);
+
+
+
 
     }
 
