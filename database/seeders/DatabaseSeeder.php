@@ -255,17 +255,9 @@ class DatabaseSeeder extends Seeder
             "region_id" => "3",
             "user_id"=> "6"
             ]);
-        FreelancerRegionPivot::create([
-            "region_id" => "5",
-            "user_id"=> "6"
-            ]);
 
         FreelancerRegionPivot::create([
             "region_id" => "3",
-            "user_id"=> "7"
-            ]);
-        FreelancerRegionPivot::create([
-            "region_id" => "5",
             "user_id"=> "7"
             ]);
 
@@ -273,15 +265,7 @@ class DatabaseSeeder extends Seeder
             "region_id" => "3",
             "user_id"=> "8"
             ]);
-        FreelancerRegionPivot::create([
-            "region_id" => "5",
-            "user_id"=> "8"
-            ]);
 
-        FreelancerRegionPivot::create([
-            "region_id" => "3",
-            "user_id"=> "9"
-            ]);
         FreelancerRegionPivot::create([
             "region_id" => "5",
             "user_id"=> "9"
@@ -291,17 +275,9 @@ class DatabaseSeeder extends Seeder
             "region_id" => "1",
             "user_id"=> "10"
             ]);
-        FreelancerRegionPivot::create([
-            "region_id" => "2",
-            "user_id"=> "10"
-            ]);
 
         FreelancerRegionPivot::create([
             "region_id" => "1",
-            "user_id"=> "11"
-            ]);
-        FreelancerRegionPivot::create([
-            "region_id" => "2",
             "user_id"=> "11"
             ]);
 
@@ -309,15 +285,7 @@ class DatabaseSeeder extends Seeder
             "region_id" => "1",
             "user_id"=> "12"
             ]);
-        FreelancerRegionPivot::create([
-            "region_id" => "2",
-            "user_id"=> "12"
-            ]);
 
-        FreelancerRegionPivot::create([
-            "region_id" => "1",
-            "user_id"=> "13"
-            ]);
         FreelancerRegionPivot::create([
             "region_id" => "2",
             "user_id"=> "13"
