@@ -57,6 +57,8 @@ Route::group([
     Route::post('get-chat', [UserAuthController::class, 'GetChat']);
     Route::post('edit-region', [UserAuthController::class, 'EditRegion']);
 
+    Route::get('get-freelancer-profile', [UserAuthController::class, 'freelancerProfile']);
+
 });
 
 

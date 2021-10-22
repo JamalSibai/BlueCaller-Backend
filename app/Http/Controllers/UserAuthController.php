@@ -764,6 +764,27 @@ class UserAuthController extends Controller
 
 
     }
+    public function freelancerProfile(){
+        $user_id =auth()->user()->id;
+        $Regions = FreelancerRegionPivot::where('user_id',$user_id)
+                                        ->get('region_id');
+        $Region_id = $Regions[0]->region_id;
+        $Region = FreelancerRegion::where('id',$Region_id)->get();
+        $Region = $Region[0]->region;
+
+
+        $user = User::where('id',$user_id)->get();
+        $category = Freelancer::where('user_id',$user_id)->get();
+        $hourly_price = $category[0]->hourly_price;
+
+        $category_id = $category[0]->category_id;
+        $category = FreelancerCategory::where('id',$category_id)->get();
+        $category = $category[0]->category;
+
+        $result = [$user,$Region,$hourly_price,$category];
+
+        return json_encode($result,JSON_PRETTY_PRINT);
+    }
 
 
 
