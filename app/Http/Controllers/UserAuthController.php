@@ -284,6 +284,15 @@ class UserAuthController extends Controller
         $appointment->status = 0;
         $appointment->save();
 
+        $existingConnection = Connection::where("user1",$user_id) ->where("user2",$freelancer_id)->get();
+        if($existingConnection){
+            return response()->json([
+                'status' => true,
+                'message' => 'User successfully reserved an appointment',
+                'appointment'=>$appointment
+            ], 201);
+        }
+
         $connections1 = new Connection;
         $connections1->user1 = $user_id;
         $connections1->user2 = $freelancer_id;
