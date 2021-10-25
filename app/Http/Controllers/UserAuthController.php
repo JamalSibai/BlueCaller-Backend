@@ -431,9 +431,16 @@ class UserAuthController extends Controller
             array_push($user_id_result, $test[0]);
         }
 
-        $result = array();
+        $filtered = array();
         for($i=0;$i<count($user_id_result);$i++){
-            $test=User::where('id',$user_id_result[$i]->user_id)->get();
+            if(!in_array ( $user_id_result[$i]->user_id,$filtered )){
+                array_push($filtered, $user_id_result[$i]->user_id);
+            }
+        }
+
+        $result = array();
+        for($i=0;$i<count($filtered);$i++){
+            $test=User::where('id',$filtered[$i])->get();
             array_push($result, $test[0]);
         }
 
