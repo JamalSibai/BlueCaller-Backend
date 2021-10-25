@@ -16,6 +16,7 @@ use App\Models\rating;
 use App\Models\Connection;
 use App\Models\Message;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
 
 class UserAuthController extends Controller
 {
@@ -741,11 +742,8 @@ class UserAuthController extends Controller
         $user_id =auth()->user()->id;
         $otheruser = $request->otheruser;
 
-        $messages = Message::where('receiver_id',$user_id)
-                            ->orwhere('receiver_id',$otheruser)
-                            ->orwhere('sender_id',$otheruser)
-                            ->orwhere('sender_id',$user_id)
-                            ->get();
+        $messages = DB::select('Select * from messages where (receiver_id = ? and sender_id = ?) or
+                                 (receiver_id = ? and sender_id = ?)',[$user_id,$otheruser,$otheruser,$user_id]);
 
         return json_encode($messages,JSON_PRETTY_PRINT);
 
