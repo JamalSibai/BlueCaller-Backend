@@ -58,6 +58,7 @@ Route::group([
     Route::post('edit-region', [UserAuthController::class, 'EditRegion']);
 
     Route::get('get-freelancer-profile', [UserAuthController::class, 'freelancerProfile']);
+    Route::post('edit-imagebase64', [UserAuthController::class, 'EditImagebase64']);
 
 });
 

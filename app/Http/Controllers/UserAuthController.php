@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use App\Models\Appointment;
 use App\Models\User;
 use App\Models\FreelancerCategory;
@@ -800,6 +801,26 @@ class UserAuthController extends Controller
         return json_encode($result,JSON_PRETTY_PRINT);
     }
 
+    public function EditImagebase64(Request $request){
+        $user_id =auth()->user()->id;
+
+        $image = $request->image;
+
+        $imageName = Str::random(12)."."."jpg";
+
+        //decode and store image
+        Storage::disk('public')->put($imageName,base64_decode($image));
+
+        $user = User::find($user_id);
+        $user->image = 'http://3.15.143.135/storage/'.$imageName;
+        $user->save();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'User successfully Edited Image',
+            'user' => $user
+        ], 201);
+    }
 
 
 
