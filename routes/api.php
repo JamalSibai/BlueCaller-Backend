@@ -60,6 +60,9 @@ Route::group([
     Route::get('get-freelancer-profile', [UserAuthController::class, 'freelancerProfile']);
     Route::post('edit-imagebase64', [UserAuthController::class, 'EditImagebase64']);
 
+    Route::get('getallfreelancers', [UserAuthController::class, 'getallfreelancers']);
+    Route::post('getfreelancerAppointments', [UserAuthController::class, 'getfreelancerAppointments']);
+
 });
 
 
