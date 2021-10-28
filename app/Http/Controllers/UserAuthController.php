@@ -838,12 +838,16 @@ class UserAuthController extends Controller
         for($i = 0; $i < count($appointments); $i++){
             for($j = 0; $j < count($appointments[$i]); $j++){
                 $user_per_appointment = User::where("id",$appointments[$i][$j]->user_id)->get();
-                $date = FreelancerCalendar::where("id",$appointments[$i][$j]->id)->get();
-                $appointments[$i][$j]["date"] = $date[0]->date_of_day;
                 $appointments[$i][$j]["user"] = $user_per_appointment;
-                $result[]= $appointments[$i][$j];
+                array_push($result, $appointments[$i][$j]);
+
             }
         }
+
+        for($i = 0; $i < count($result); $i++){
+            $date = FreelancerCalendar::where("id",$result[$i]->calendar_id)->get();
+            $result[$i]["date"] = $date[0]->date_of_day;
+    }
 
         return json_encode($result,JSON_PRETTY_PRINT);
     }
