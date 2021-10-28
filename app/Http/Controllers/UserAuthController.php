@@ -856,6 +856,38 @@ class UserAuthController extends Controller
         return json_encode($result,JSON_PRETTY_PRINT);
     }
 
+    public function getUserAppointments(){
+        $user_id =auth()->user()->id;
+
+        $appointments = Appointment::where("user_id",$user_id)
+                                    ->where("status",0)
+                                    ->get();
+
+        // $dates = FreelancerCalendar::where("user_id",$freelancer_id)->get();
+
+        for($i = 0; $i < count($appointments); $i++){
+            $checkAppointments = FreelancerCalendar::where("id",$appointments[$i]->calendar_id)->get();
+            $appointments[$i]["date"] = $checkAppointments[0]->date_of_day;
+            $appointments[$i]["freelancer_id"] = $checkAppointments[0]->user_id;
+        }
+
+        for($i = 0; $i < count($appointments); $i++){
+            $category = Freelancer::where("user_id",$appointments[$i]->freelancer_id)->get();
+            $category_name = FreelancerCategory::where("id",$category[0]->category_id)->get();
+            $appointments[$i]["category"] = $category_name[0]->category;
+        }
+
+        for($i = 0; $i < count($appointments); $i++){
+            $freelancer = User::where("id",$appointments[$i]->freelancer_id)->get();
+            $appointments[$i]["freelancer"] = $freelancer;
+        }
+
+
+
+
+        return json_encode($appointments,JSON_PRETTY_PRINT);
+    }
+
 
 
 

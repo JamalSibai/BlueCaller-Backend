@@ -63,6 +63,8 @@ Route::group([
     Route::get('getallfreelancers', [UserAuthController::class, 'getallfreelancers']);
     Route::post('getfreelancerAppointments', [UserAuthController::class, 'getfreelancerAppointments']);
 
+    Route::get('getUserAppointments', [UserAuthController::class, 'getUserAppointments']);
+
 });
 
 
