@@ -841,8 +841,7 @@ class UserAuthController extends Controller
                 $date = FreelancerCalendar::where("id",$appointments[$i][$j]->id)->get();
                 $appointments[$i][$j]["date"] = $date[0]->date_of_day;
                 $appointments[$i][$j]["user"] = $user_per_appointment;
-                array_push($result, $appointments[$i][$j]);
-
+                $result[]= $appointments[$i][$j];
             }
         }
 
