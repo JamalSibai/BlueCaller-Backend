@@ -822,6 +822,8 @@ class UserAuthController extends Controller
         ], 201);
     }
 
+    //Admin APIs
+
     public function getfreelancerAppointments(Request $request){
         $freelancer_id= $request->freelancer_id;
 
@@ -891,6 +893,17 @@ class UserAuthController extends Controller
 
 
         return json_encode($appointments,JSON_PRETTY_PRINT);
+    }
+
+    public function deleteAppointment(Request $request){
+        $id= $request->id;
+        $appointment = Appointment::where('id',$id);
+        $appointment->delete();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Admin successfully deleted appointment ',
+        ], 201);
     }
 
 

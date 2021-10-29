@@ -64,6 +64,7 @@ Route::group([
     Route::post('getfreelancerAppointments', [UserAuthController::class, 'getfreelancerAppointments']);
 
     Route::get('getUserAppointments', [UserAuthController::class, 'getUserAppointments']);
+    Route::post('delete-appointment', [UserAuthController::class, 'deleteAppointment']);
 
 });
 
