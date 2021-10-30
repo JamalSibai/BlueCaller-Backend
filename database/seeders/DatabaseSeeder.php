@@ -309,7 +309,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "6",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -331,7 +331,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "7",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -396,7 +396,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "10",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -417,7 +417,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "11",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -438,7 +438,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "12",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -459,7 +459,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "13",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
