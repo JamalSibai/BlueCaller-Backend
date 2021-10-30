@@ -92,117 +92,117 @@ class DatabaseSeeder extends Seeder
 
         //users
         User::create([
-            "name" => "Mark",
+            "name" => "Mark Tate",
             "email"=> "Mark@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800000",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
-            "name" => "Mike",
+            "name" => "Mike King",
             "email"=> "Mike@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
-            "name" => "Ali",
+            "name" => "Ali Larsen",
             "email"=> "Ali@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
-            "name" => "Mohammad",
+            "name" => "Nancy Stanley",
             "email"=> "Mohammad@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
         User::create([
-            "name" => "Charbel",
+            "name" => "Charbel Mosley",
             "email"=> "Charbel@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0"
             ]);
 
         //Freelancers
         User::create([
-            "name" => "George",
+            "name" => "George Fowler",
             "email"=> "George@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Fadi",
+            "name" => "Fadi Navarro",
             "email"=> "Fadi@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Karim",
-            "email"=> "Karim@gmail.com",
+            "name" => "Lia Wiley",
+            "email"=> "Lia@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Abass",
+            "name" => "Abass Smith",
             "email"=> "Abass@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Fadel",
-            "email"=> "Fadel@gmail.com",
+            "name" => "Karla Rice",
+            "email"=> "Karla@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "John",
+            "name" => "John Casey",
             "email"=> "John@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Jad",
+            "name" => "Jad Ramsey",
             "email"=> "Jad@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Joudi",
+            "name" => "Joudi Key",
             "email"=> "Joudi@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"1"
             ]);
         User::create([
-            "name" => "Jamal",
+            "name" => "Jamal Rich",
             "email"=> "jamal@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"http://3.15.143.135/storage/mytnk4gxibti4Y0bPxdufDQDKJJB96CapkvUsSH6.jpg",
             "user_type"=>"0",
             "firebase_token"=>"ExponentPushToken[5RBES7Ixh6sgwQpqy1quK3]"
             ]);
@@ -231,7 +231,7 @@ class DatabaseSeeder extends Seeder
             ]);
         Freelancer::create([
             "hourly_price" => "9",
-            "category_id"=> "4",
+            "category_id"=> "1",
             "user_id"=> "10",
             ]);
         Freelancer::create([
@@ -256,40 +256,48 @@ class DatabaseSeeder extends Seeder
             "user_id"=> "6"
             ]);
 
+
         FreelancerRegionPivot::create([
             "region_id" => "3",
             "user_id"=> "7"
             ]);
+
 
         FreelancerRegionPivot::create([
             "region_id" => "3",
             "user_id"=> "8"
             ]);
 
+
         FreelancerRegionPivot::create([
-            "region_id" => "5",
+            "region_id" => "3",
             "user_id"=> "9"
             ]);
+
 
         FreelancerRegionPivot::create([
             "region_id" => "1",
             "user_id"=> "10"
             ]);
 
+
         FreelancerRegionPivot::create([
             "region_id" => "1",
             "user_id"=> "11"
             ]);
+
 
         FreelancerRegionPivot::create([
             "region_id" => "1",
             "user_id"=> "12"
             ]);
 
+
         FreelancerRegionPivot::create([
-            "region_id" => "2",
+            "region_id" => "1",
             "user_id"=> "13"
             ]);
+
 
         // Freelancers calenders
         FreelancerCalendar::create([
@@ -309,7 +317,37 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "6",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "6",
+            "date_of_day"=> "2021-11-24",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "6",
+            "date_of_day"=> "2021-11-25",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "6",
+            "date_of_day"=> "2021-11-26",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "6",
+            "date_of_day"=> "2021-11-27",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "6",
+            "date_of_day"=> "2021-11-26",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "6",
+            "date_of_day"=> "2021-11-27",
             "availability"=> "0"
             ]);
 
@@ -331,7 +369,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "7",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -353,7 +391,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "8",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -375,7 +413,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "9",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -396,7 +434,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "10",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -417,7 +455,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "11",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -438,7 +476,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "12",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -459,7 +497,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "13",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
@@ -486,7 +524,7 @@ class DatabaseSeeder extends Seeder
 
         //appointments
         Appointment::create([
-            "calendar_id" => "33",
+            "calendar_id" => "1",
             "user_id"=> "1",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -494,7 +532,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "33",
+            "calendar_id" => "1",
             "user_id"=> "2",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -502,7 +540,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "33",
+            "calendar_id" => "1",
             "user_id"=> "3",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -510,7 +548,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "33",
+            "calendar_id" => "1",
             "user_id"=> "4",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -518,7 +556,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "33",
+            "calendar_id" => "1",
             "user_id"=> "5",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -527,7 +565,7 @@ class DatabaseSeeder extends Seeder
             ]);
 
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "2",
             "user_id"=> "1",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -535,7 +573,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "2",
             "user_id"=> "2",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -543,7 +581,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "2",
             "user_id"=> "3",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -551,7 +589,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "2",
             "user_id"=> "4",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -559,7 +597,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "3",
             "user_id"=> "5",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -568,7 +606,7 @@ class DatabaseSeeder extends Seeder
             ]);
 
         Appointment::create([
-            "calendar_id" => "35",
+            "calendar_id" => "3",
             "user_id"=> "1",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -576,7 +614,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "35",
+            "calendar_id" => "3",
             "user_id"=> "2",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -584,7 +622,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "35",
+            "calendar_id" => "4",
             "user_id"=> "3",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -592,7 +630,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "4",
             "user_id"=> "4",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -600,7 +638,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'0'
             ]);
         Appointment::create([
-            "calendar_id" => "35",
+            "calendar_id" => "4",
             "user_id"=> "5",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -659,7 +697,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'1'
             ]);
         Appointment::create([
-            "calendar_id" => "35",
+            "calendar_id" => "20",
             "user_id"=> "1",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -667,7 +705,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'1'
             ]);
         Appointment::create([
-            "calendar_id" => "34",
+            "calendar_id" => "13",
             "user_id"=> "1",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -675,7 +713,7 @@ class DatabaseSeeder extends Seeder
             "status"=>'1'
             ]);
         Appointment::create([
-            "calendar_id" => "33",
+            "calendar_id" => "7",
             "user_id"=> "1",
             "longitude"=> "33.84631872619141",
             "latitude"=> "35.507493995180134",
@@ -692,17 +730,27 @@ class DatabaseSeeder extends Seeder
         rating::create([
             "user_rating"=>'1',
             "rated_user"=>'7',
-            "ratings"=>'2'
-        ]);
-        rating::create([
-            "user_rating"=>'1',
-            "rated_user"=>'10',
             "ratings"=>'3'
         ]);
         rating::create([
             "user_rating"=>'1',
-            "rated_user"=>'11',
+            "rated_user"=>'8',
+            "ratings"=>'3'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
+            "rated_user"=>'9',
+            "ratings"=>'3'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
+            "rated_user"=>'10',
             "ratings"=>'5'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
+            "rated_user"=>'11',
+            "ratings"=>'2.5'
         ]);
 
         ///connection
