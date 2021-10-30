@@ -25,6 +25,7 @@ Route::group([
 
 ], function () {
     Route::post('login', [UserAuthController::class, 'login']);
+    Route::post('adminLogin', [UserAuthController::class, 'adminLogin']);
     Route::post('register', [UserAuthController::class, 'register']);
     Route::post('freelancerregister', [UserAuthController::class, 'freelancerregister']);
     Route::get('user-profile', [UserAuthController::class, 'userProfile']);
@@ -65,6 +66,7 @@ Route::group([
 
     Route::get('getUserAppointments', [UserAuthController::class, 'getUserAppointments']);
     Route::post('delete-appointment', [UserAuthController::class, 'deleteAppointment']);
+    Route::post('remove-freelancer', [UserAuthController::class, 'removeFreelancer']);
 
 });
 

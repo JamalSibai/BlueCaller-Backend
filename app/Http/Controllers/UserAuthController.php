@@ -28,7 +28,7 @@ class UserAuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['login', 'register','freelancerregister']]);
+        $this->middleware('auth:api', ['except' => ['login','adminLogin', 'register','freelancerregister']]);
     }
 
     /**
@@ -903,6 +903,114 @@ class UserAuthController extends Controller
         return response()->json([
             'status' => true,
             'message' => 'Admin successfully deleted appointment ',
+        ], 201);
+    }
+
+
+    public function adminLogin(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'password' => 'required|string|min:6',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+
+        if($request->email != "jamal@gmail.com"){
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
+
+        if (!$token = auth()->attempt($validator->validated())) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
+        return $this->createNewToken($token);
+    }
+
+    public function removeFreelancer(Request $request){
+        $id= $request->id;
+
+        //remove from freelancer table
+        $freelancer = Freelancer::where('user_id',$id);
+        $freelancer->delete();
+
+        //remove from region table
+        $freelancerRegion = FreelancerRegionPivot::where('user_id',$id);
+        $freelancerRegion->delete();
+
+        //remove from calendar and appointments
+        $calendar = FreelancerCalendar::where('user_id',$id)->get();
+        if(count($calendar)>0){
+        for($i = 0; $i < count($calendar); $i++){
+                $appointments = Appointment::where('calendar_id',$calendar[$i]->id)->get();
+                if(count($appointments)>0){
+                    for($j = 0; $j < count($appointments); $j++){
+                        $appointmentToDelete = Appointment::where('id',$appointments[$j]->id);
+                        $appointmentToDelete->delete();
+                    }
+                }
+                $calendarToRemove = FreelancerCalendar::where('id',$calendar[$i]->id);
+                $calendarToRemove->delete();
+        }
+    }
+
+        //remove from connections
+        $freelancerConnections = Connection::where('user1',$id)
+                                            ->get();
+        if(count($freelancerConnections)>0){
+        for($i = 0; $i < count($freelancerConnections); $i++){
+            $connection = Connection::where('user1',$freelancerConnections[$i]->id);
+            $connection->delete();
+        }
+        $freelancerConnections = Connection::where('user2',$id)
+                                            ->get();
+        for($i = 0; $i < count($freelancerConnections); $i++){
+            $connection = Connection::where('user2',$freelancerConnections[$i]->id);
+            $connection->delete();
+        }
+    }
+
+        //remove from Messages
+        $freelancerMessages = Message::where('sender_id',$id)
+                                            ->get();
+        if(count($freelancerMessages)>0){
+        for($i = 0; $i < count($freelancerMessages); $i++){
+            $Message = Message::where('id',$freelancerMessages[$i]->id);
+            $Message->delete();
+        }
+        $freelancerMessages = Message::where('receiver_id',$id)
+                                            ->get();
+        for($i = 0; $i < count($freelancerMessages); $i++){
+            $Message = Message::where('id',$freelancerMessages[$i]->id);
+            $Message->delete();
+        }
+    }
+
+        //remove from ratings
+        $freelancerRating = rating::where('rated_user',$id)
+                                            ->get();
+        if(count($freelancerRating)>0){
+        for($i = 0; $i < count($freelancerRating); $i++){
+            $rating = rating::where('id',$freelancerRating[$i]->id);
+            $rating->delete();
+        }
+    }
+
+
+        //remove feelancer
+        $freelancer = User::where('id',$id);
+        $freelancer->delete();
+
+
+
+
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Admin successfully deleted freelancer ',
         ], 201);
     }
 
