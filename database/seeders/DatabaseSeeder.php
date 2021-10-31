@@ -116,8 +116,8 @@ class DatabaseSeeder extends Seeder
             "user_type"=>"0"
             ]);
         User::create([
-            "name" => "Mohammad",
-            "email"=> "Mohammad@gmail.com",
+            "name" => "Marly",
+            "email"=> "Marly@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
@@ -267,12 +267,12 @@ class DatabaseSeeder extends Seeder
             ]);
 
         FreelancerRegionPivot::create([
-            "region_id" => "5",
+            "region_id" => "3",
             "user_id"=> "9"
             ]);
 
         FreelancerRegionPivot::create([
-            "region_id" => "1",
+            "region_id" => "3",
             "user_id"=> "10"
             ]);
 
@@ -696,6 +696,16 @@ class DatabaseSeeder extends Seeder
         ]);
         rating::create([
             "user_rating"=>'1',
+            "rated_user"=>'8',
+            "ratings"=>'3'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
+            "rated_user"=>'9',
+            "ratings"=>'4'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
             "rated_user"=>'10',
             "ratings"=>'3'
         ]);
@@ -703,6 +713,16 @@ class DatabaseSeeder extends Seeder
             "user_rating"=>'1',
             "rated_user"=>'11',
             "ratings"=>'5'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
+            "rated_user"=>'12',
+            "ratings"=>'1'
+        ]);
+        rating::create([
+            "user_rating"=>'1',
+            "rated_user"=>'13',
+            "ratings"=>'1'
         ]);
 
         ///connection
