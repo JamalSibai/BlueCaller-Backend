@@ -155,7 +155,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Abass",
@@ -163,7 +164,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Fadel",
@@ -171,7 +173,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "John",
@@ -179,7 +182,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Jad",
@@ -187,7 +191,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Joudi",
@@ -195,7 +200,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Jamal",
@@ -204,7 +210,7 @@ class DatabaseSeeder extends Seeder
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
             "user_type"=>"0",
-            "firebase_token"=>"ExponentPushToken[5RBES7Ixh6sgwQpqy1quK3]"
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
 
 
