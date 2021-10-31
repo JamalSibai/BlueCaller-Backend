@@ -1014,6 +1014,95 @@ class UserAuthController extends Controller
         ], 201);
     }
 
+    public function getAllfreelancerWithAppointments(){
+        $allFreelancers = User::where('user_type',1)->get();
+        $result=array();
+        for($j = 0; $j < count($allFreelancers); $j++){
+
+
+        $freelancer_id= $allFreelancers[$j]->id;
+        $result[$j]['User']= $allFreelancers[$j];
+
+
+        $dates = FreelancerCalendar::where("user_id",$freelancer_id)->get();
+
+        ///get total appointments
+        $appointments = array();
+        for($i = 0; $i < count($dates); $i++){
+            $checkAppointments = Appointment::where("calendar_id",$dates[$i]->id)->get();
+            if(count($checkAppointments)>0){
+                array_push($appointments, $checkAppointments);
+
+            }
+        }
+
+        $countOfAppointments=0;
+        for($i = 0; $i < count($appointments); $i++){
+            if ($countOfAppointments == 0){
+                $countOfAppointments = count($appointments[$i]);
+            }else{
+                $countOfAppointments += count($appointments[$i]);
+            }
+
+        }
+        $result[$j]['count'] = $countOfAppointments;
+
+
+        ///get finished appointments
+        $appointments = array();
+        for($i = 0; $i < count($dates); $i++){
+            $checkAppointments = Appointment::where("calendar_id",$dates[$i]->id)->where("status",1)->get();
+            if(count($checkAppointments)>0){
+                array_push($appointments, $checkAppointments);
+
+            }
+        }
+
+        $countOfAppointments=0;
+        for($i = 0; $i < count($appointments); $i++){
+            if ($countOfAppointments == 0){
+                $countOfAppointments = count($appointments[$i]);
+            }else{
+                $countOfAppointments += count($appointments[$i]);
+            }
+
+        }
+        $result[$j]['countFinished'] = $countOfAppointments;
+    }
+
+        return json_encode($result,JSON_PRETTY_PRINT);
+    }
+
+    public function getFreelancersPerRegion(){
+        $result = array();
+
+        $Akkar = FreelancerRegionPivot::where('region_id',1)->get();
+        $result['Akkar'] = count($Akkar);
+
+        $Baalbeck = FreelancerRegionPivot::where('region_id',2)->get();
+        $result['Baalbeck'] = count($Baalbeck);
+
+        $Beirut = FreelancerRegionPivot::where('region_id',3)->get();
+        $result['Beirut'] = count($Beirut);
+
+        $Bekaa = FreelancerRegionPivot::where('region_id',4)->get();
+        $result['Bekaa'] = count($Bekaa);
+
+        $MountLebanon = FreelancerRegionPivot::where('region_id',5)->get();
+        $result['MountLebanon'] = count($MountLebanon);
+
+        $NorthLebanon = FreelancerRegionPivot::where('region_id',6)->get();
+        $result['NorthLebanon'] = count($NorthLebanon);
+
+        $Nabatiyeh = FreelancerRegionPivot::where('region_id',7)->get();
+        $result['Nabatiyeh'] = count($Nabatiyeh);
+
+        $SouthLebanon = FreelancerRegionPivot::where('region_id',8)->get();
+        $result['SouthLebanon'] = count($SouthLebanon);
+
+        return json_encode($result,JSON_PRETTY_PRINT);
+    }
+
 
 
 

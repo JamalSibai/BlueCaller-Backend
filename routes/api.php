@@ -67,6 +67,8 @@ Route::group([
     Route::get('getUserAppointments', [UserAuthController::class, 'getUserAppointments']);
     Route::post('delete-appointment', [UserAuthController::class, 'deleteAppointment']);
     Route::post('remove-freelancer', [UserAuthController::class, 'removeFreelancer']);
+    Route::get('get-satistics-info', [UserAuthController::class, 'getAllfreelancerWithAppointments']);
+    Route::get('freelancer-region', [UserAuthController::class, 'getFreelancersPerRegion']);
 
 });
 
