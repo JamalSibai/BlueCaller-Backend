@@ -139,7 +139,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Fadi",
@@ -147,7 +148,8 @@ class DatabaseSeeder extends Seeder
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
             "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
-            "user_type"=>"1"
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
         User::create([
             "name" => "Karim",
