@@ -280,7 +280,7 @@ class DatabaseSeeder extends Seeder
         Freelancer::create([
             "hourly_price" => "15",
             "category_id"=> "1",
-            "user_id"=> "8",
+            "user_id"=> "14",
             ]);
         Freelancer::create([
             "hourly_price" => "11",
