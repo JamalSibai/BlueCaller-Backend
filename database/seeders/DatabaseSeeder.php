@@ -215,6 +215,25 @@ class DatabaseSeeder extends Seeder
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
 
+        User::create([
+            "name" => "Jim",
+            "email"=> "Jim@gmail.com",
+            "password"=> bcrypt("password"),
+            "phone"=> "70800001",
+            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "user_type"=>"1",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
+            ]);
+        User::create([
+            "name" => "Jak",
+            "email"=> "Jak@gmail.com",
+            "password"=> bcrypt("password"),
+            "phone"=> "70800001",
+            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "user_type"=>"0",
+            "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
+            ]);
+
 
         ///Freelancers Info
         Freelancer::create([
@@ -258,6 +277,17 @@ class DatabaseSeeder extends Seeder
             "user_id"=> "13",
             ]);
 
+        Freelancer::create([
+            "hourly_price" => "15",
+            "category_id"=> "1",
+            "user_id"=> "8",
+            ]);
+        Freelancer::create([
+            "hourly_price" => "11",
+            "category_id"=> "1",
+            "user_id"=> "15",
+            ]);
+
         ///regions
         FreelancerRegionPivot::create([
             "region_id" => "3",
@@ -297,6 +327,16 @@ class DatabaseSeeder extends Seeder
         FreelancerRegionPivot::create([
             "region_id" => "2",
             "user_id"=> "13"
+            ]);
+
+        FreelancerRegionPivot::create([
+            "region_id" => "3",
+            "user_id"=> "14"
+            ]);
+
+        FreelancerRegionPivot::create([
+            "region_id" => "3",
+            "user_id"=> "15"
             ]);
 
         // Freelancers calendars
@@ -490,6 +530,27 @@ class DatabaseSeeder extends Seeder
             "user_id" => "11",
             "date_of_day"=> "2021-11-30",
             "availability"=> "1"
+            ]);
+
+        FreelancerCalendar::create([
+            "user_id" => "14",
+            "date_of_day"=> "2021-11-24",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "14",
+            "date_of_day"=> "2021-11-25",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "15",
+            "date_of_day"=> "2021-11-25",
+            "availability"=> "0"
+            ]);
+        FreelancerCalendar::create([
+            "user_id" => "15",
+            "date_of_day"=> "2021-11-24",
+            "availability"=> "0"
             ]);
 
         //appointments
