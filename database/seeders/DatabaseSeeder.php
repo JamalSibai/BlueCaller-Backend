@@ -401,7 +401,7 @@ class DatabaseSeeder extends Seeder
             ]);
         FreelancerCalendar::create([
             "user_id" => "8",
-            "date_of_day"=> "2021-11-22",
+            "date_of_day"=> "2021-11-23",
             "availability"=> "0"
             ]);
 
