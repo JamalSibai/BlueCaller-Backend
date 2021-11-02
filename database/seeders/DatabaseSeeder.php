@@ -299,7 +299,7 @@ class DatabaseSeeder extends Seeder
             "user_id"=> "13"
             ]);
 
-        // Freelancers calenders
+        // Freelancers calendars
         FreelancerCalendar::create([
             "user_id" => "6",
             "date_of_day"=> "2021-11-20",
