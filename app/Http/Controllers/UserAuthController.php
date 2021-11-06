@@ -918,7 +918,7 @@ class UserAuthController extends Controller
             return response()->json($validator->errors(), 422);
         }
 
-        if($request->email != "jamal@gmail.com"){
+        if($request->email != "admin@gmail.com"){
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
