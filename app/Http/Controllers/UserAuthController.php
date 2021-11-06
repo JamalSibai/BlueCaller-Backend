@@ -812,7 +812,7 @@ class UserAuthController extends Controller
         Storage::disk('public')->put($imageName,base64_decode($image));
 
         $user = User::find($user_id);
-        $user->image = 'http://3.15.143.135/storage/'.$imageName;
+        $user->image = 'https://bluecaller.tk/storage/'.$imageName;
         $user->save();
 
         return response()->json([

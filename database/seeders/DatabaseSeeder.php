@@ -96,7 +96,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Mark@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800000",
-            "image"=>"http://3.15.143.135/storage/ZfUF8jsHVmBD.jpg",
+            "image"=>"https://bluecaller.tk/storage/ZfUF8jsHVmBD.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -120,7 +120,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Marly@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/JB4tKk3MGbZc.jpg",
+            "image"=>"https://bluecaller.tk/storage/JB4tKk3MGbZc.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -138,7 +138,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "George@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/kGyyFw9scaFe.jpg",
+            "image"=>"https://bluecaller.tk/storage/kGyyFw9scaFe.jpg",
             "user_type"=>"1",
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
@@ -156,7 +156,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Karim@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/ZcgMCAfNyCBs.jpg",
+            "image"=>"https://bluecaller.tk/storage/ZcgMCAfNyCBs.jpg",
             "user_type"=>"1",
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
@@ -174,7 +174,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Fadel@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"http://3.15.143.135/storage/u6Bs1aDarzxh.jpg",
+            "image"=>"https://bluecaller.tk/storage/u6Bs1aDarzxh.jpg",
             "user_type"=>"1",
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
