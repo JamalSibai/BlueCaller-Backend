@@ -831,11 +831,55 @@ class DatabaseSeeder extends Seeder
             "user2"=>'1',
         ]);
 
+        Connection::create([
+            "user1"=>'6',
+            "user2"=>'1',
+        ]);
+        Connection::create([
+            "user1"=>'6',
+            "user2"=>'2',
+        ]);
+        Connection::create([
+            "user1"=>'6',
+            "user2"=>'3',
+        ]);
+        Connection::create([
+            "user1"=>'6',
+            "user2"=>'4',
+        ]);
+        Connection::create([
+            "user1"=>'6',
+            "user2"=>'5',
+        ]);
+
         //messages
         Message::create([
             "sender_id"=>'1',
             "receiver_id"=>'6',
-            "message"=>'Hello can you be here as early as possible',
+            "message"=>'Hello George, how are you?',
+        ]);
+        Message::create([
+            "sender_id"=>'6',
+            "receiver_id"=>'1',
+            "message"=>'Hello Mark, all is good!',
+        ]);
+
+        Message::create([
+            "sender_id"=>'6',
+            "receiver_id"=>'1',
+            "message"=>'what seems to be the electric problem?',
+        ]);
+
+        Message::create([
+            "sender_id"=>'1',
+            "receiver_id"=>'6',
+            "message"=>'Suddenly the electricity went off',
+        ]);
+
+        Message::create([
+            "sender_id"=>'6',
+            "receiver_id"=>'1',
+            "message"=>'No worries everything will be fixed',
         ]);
 
         Message::create([
@@ -857,11 +901,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-        Message::create([
-            "sender_id"=>'6',
-            "receiver_id"=>'1',
-            "message"=>'Hello I am on my way',
-        ]);
+
+
+
 
         Message::create([
             "sender_id"=>'7',
