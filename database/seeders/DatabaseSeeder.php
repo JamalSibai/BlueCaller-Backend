@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
             "category" => "Satellite",
             ]);
         FreelancerCategory::create([
-            "category" => "Pluming",
+            "category" => "Plumbing",
             ]);
         FreelancerCategory::create([
             "category" => "Carpentry",
@@ -557,40 +557,40 @@ class DatabaseSeeder extends Seeder
         Appointment::create([
             "calendar_id" => "33",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "33",
             "user_id"=> "2",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "33",
             "user_id"=> "3",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "33",
             "user_id"=> "4",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "33",
             "user_id"=> "5",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
@@ -598,40 +598,40 @@ class DatabaseSeeder extends Seeder
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "2",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "3",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "4",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "5",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
@@ -639,40 +639,40 @@ class DatabaseSeeder extends Seeder
         Appointment::create([
             "calendar_id" => "35",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "35",
             "user_id"=> "2",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "35",
             "user_id"=> "3",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "4",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "35",
             "user_id"=> "5",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
@@ -680,40 +680,40 @@ class DatabaseSeeder extends Seeder
         Appointment::create([
             "calendar_id" => "36",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "36",
             "user_id"=> "2",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "36",
             "user_id"=> "3",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "36",
             "user_id"=> "4",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
         Appointment::create([
             "calendar_id" => "36",
             "user_id"=> "5",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'0'
             ]);
@@ -722,32 +722,32 @@ class DatabaseSeeder extends Seeder
         Appointment::create([
             "calendar_id" => "36",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'1'
             ]);
         Appointment::create([
             "calendar_id" => "35",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'1'
             ]);
         Appointment::create([
             "calendar_id" => "34",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'1'
             ]);
         Appointment::create([
             "calendar_id" => "33",
             "user_id"=> "1",
-            "longitude"=> "33.84631872619141",
-            "latitude"=> "35.507493995180134",
+            "longitude"=> "35.5018",
+            "latitude"=> "33.8938",
             "description"=> "Broken {example} ...",
             "status"=>'1'
             ]);
@@ -835,13 +835,13 @@ class DatabaseSeeder extends Seeder
         Message::create([
             "sender_id"=>'1',
             "receiver_id"=>'6',
-            "message"=>'Hello can be here as early as possible',
+            "message"=>'Hello can you be here as early as possible',
         ]);
 
         Message::create([
             "sender_id"=>'1',
             "receiver_id"=>'7',
-            "message"=>'Hello can be here as early as possible',
+            "message"=>'Hello can you be here as early as possible',
         ]);
 
         Message::create([
