@@ -799,10 +799,7 @@ class DatabaseSeeder extends Seeder
             "user1"=>'1',
             "user2"=>'6',
         ]);
-        Connection::create([
-            "user1"=>'6',
-            "user2"=>'1',
-        ]);
+
 
         Connection::create([
             "user1"=>'1',
