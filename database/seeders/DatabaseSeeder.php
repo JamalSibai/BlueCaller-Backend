@@ -104,7 +104,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Mike@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70913250",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"https://bluecaller.tk/storage/8y88Oq2sTxE9.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -112,7 +112,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Ali@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70800001",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"https://bluecaller.tk/storage/jYGhCbGFI5cz.jpg",
             "user_type"=>"0"
             ]);
         User::create([
@@ -128,7 +128,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Charbel@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70946155",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"https://bluecaller.tk/storage/8xXNC6Fk8HzB.jpg",
             "user_type"=>"0"
             ]);
 
@@ -147,7 +147,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Fadi@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70123123",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"https://bluecaller.tk/storage/ETgSXc5NL4eY.jpg",
             "user_type"=>"1",
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
@@ -165,7 +165,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "Abass@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70555321",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"https://bluecaller.tk/storage/35ZcAcDsI1If.jpg",
             "user_type"=>"1",
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
@@ -183,7 +183,7 @@ class DatabaseSeeder extends Seeder
             "email"=> "John@gmail.com",
             "password"=> bcrypt("password"),
             "phone"=> "70767676",
-            "image"=>"https://bluecaller.tk/storage/Me8inkaENWQGbmCvdXjsbF4ZEAE2dGEVnbgKs8YB.jpg",
+            "image"=>"https://bluecaller.tk/storage/1wqrSzcAWNpt.jpg",
             "user_type"=>"1",
             "firebase_token"=>"ExponentPushToken[SzrSP3I1NEFLpODtIZp3oi]"
             ]);
